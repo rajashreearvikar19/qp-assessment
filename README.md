@@ -151,7 +151,7 @@ Once the Docker containers are running, you can access the API at:
 http://localhost:3000
 ```
 
-### 6. Start Application Using NPM(Another alternative)
+### 6. Atlernative  Start Application Using NPM(Another alternative)
 
 You can also start the application locally without Docker by using the following commands:
 
