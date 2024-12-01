@@ -4,13 +4,11 @@ import adminRoutes from './routes/admin.routes';
 import userRoutes from './routes/user.routes';
 import dotenv from 'dotenv';
 
-// Load environment variables
 dotenv.config();
 
 const app: Application = express();
 const PORT: string | number = process.env.PORT || 3000;
 
-// Middleware
 app.use(express.json());
 
 // Routes
