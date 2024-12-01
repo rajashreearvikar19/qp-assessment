@@ -4,9 +4,8 @@ import Grocery, { IGrocery } from '../models/grocery.model';
 // Add a new grocery
 export const addGrocery = async (req: Request, res: Response): Promise<void> => {
   try {
-    const groceries: IGrocery[] = req.body; // Assuming req.body is an array of groceries
+    const groceries: IGrocery[] = req.body;
 
-    // Validate the body content (optional but recommended)
     if (!Array.isArray(groceries)) {
       res.status(400).json({ message: "Request body must be an array of groceries." });
       return;
